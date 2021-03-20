@@ -12,6 +12,7 @@ module.exports = {
   plugins: ['prettier'],
   // add your custom rules here
   rules: {
+    'vue/singleline-html-element-content-newline': 'off',
     'prettier/prettier': ['error', { trailingComma: 'all' }],
   },
 };
