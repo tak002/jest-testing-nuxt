@@ -12,6 +12,6 @@ module.exports = {
   plugins: ['prettier'],
   // add your custom rules here
   rules: {
-    'prettier/prettier': ['error', { trailingComma: all }],
+    'prettier/prettier': ['error', { trailingComma: 'all' }],
   },
 };
