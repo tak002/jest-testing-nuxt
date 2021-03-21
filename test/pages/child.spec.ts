@@ -1,10 +1,10 @@
+import ChildPage from '@/pages/child.vue';
 import {
   createLocalVue,
   mount,
   RouterLinkStub,
   Wrapper,
 } from '@vue/test-utils';
-import ChildPage from '@/pages/child.vue';
 
 const localVue = createLocalVue();
 
@@ -16,6 +16,10 @@ describe('pages/child.vue', () => {
         NuxtLink: RouterLinkStub,
       },
     });
-    expect(wrapper.find(RouterLinkStub).props().to).toBe('/');
+    /**
+     * @see https://vue-test-utils.vuejs.org/ja/api/wrapper/#exists
+     * findは現在非推奨とのことでfindComponent
+     */
+    expect(wrapper.findComponent(RouterLinkStub).props().to).toBe('/');
   });
 });
