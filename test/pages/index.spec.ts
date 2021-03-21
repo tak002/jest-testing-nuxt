@@ -1,8 +1,8 @@
+import IndexPage from '@/pages/index.vue';
+import store from '@/store/index';
 import { createLocalVue, mount, Wrapper } from '@vue/test-utils';
 import cloneDeep from 'lodash/cloneDeep';
 import Vuex from 'vuex';
-import IndexPage from '~/pages/index.vue';
-import store from '~/store/index';
 
 // vuexを使う準備
 const localVue = createLocalVue();

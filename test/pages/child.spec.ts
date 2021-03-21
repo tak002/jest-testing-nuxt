@@ -4,7 +4,7 @@ import {
   RouterLinkStub,
   Wrapper,
 } from '@vue/test-utils';
-import ChildPage from '~/pages/child.vue';
+import ChildPage from '@/pages/child.vue';
 
 const localVue = createLocalVue();
 

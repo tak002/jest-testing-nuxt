@@ -1,5 +1,5 @@
+import AppToggleButton from '@/components/AppToggleButton.vue';
 import { mount, Wrapper } from '@vue/test-utils';
-import AppToggleButton from '~/components/AppToggleButton.vue';
 
 describe('AppToggleButton.vue', () => {
   let wrapper: Wrapper<any> | null;
